@@ -51,12 +51,37 @@ my_favorite_songs_dict = {
     'In This World': 4.02,
 }
 
+import random
+
+sound_time = [3.03, 4.02, 3.40, 5.28, 4.15, 4.04, 2.58] 
+
+print(random.sample(sound_time, 3))
+
+a = 4.15
+b = 2.58
+c = 3.4
+
+print('Три песни звучат ', (a + b + c), 'минут')
+
 # Дополнительно для пунктов A и B
 # Пункт C.
 # Сгенерируйте случайные песни с помощью модуля random
 # import random
 
+import random
+print(random.sample(my_favorite_songs, 3))
+print(random.sample(my_favorite_songs_dict, 3))
+
 # Дополнительно 
 # Пункт D.
 # Переведите минуты и секунды в формат времени. Используйте модуль datetime 
+
+import datetime
+n = 2075
+time_format = str(datetime.timedelta(seconds=n))
+print(time_format)
+
+
+
+
 
